@@ -1,0 +1,34 @@
+# CMake, Qt, and IDE build output
+/build/
+/bin/
+/out/
+/dist/
+/cmake-build-*/
+/CMakeFiles/
+/CMakeCache.txt
+/cmake_install.cmake
+/compile_commands.json
+/CMakeUserPresets.json
+/.vs/
+/.vscode/
+/.idea/
+*.user
+*.suo
+*.vcxproj.user
+
+# Generated Qt translation binaries and cached QML data
+*.qm
+*.qmlc
+*.jsc
+
+# Runtime logs and local configuration
+*.log
+logs/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore

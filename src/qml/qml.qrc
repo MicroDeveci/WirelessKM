@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>App.qml</file>
+        <file>logo.ico</file>
+        <file>icon.png</file>
+        <file>home.qml</file>
+        <file>key_setting.qml</file>
+        <file>device_link.qml</file>
+        <file>log.qml</file>
+        <file>about.qml</file>
+        <file>thanks.qml</file>
+        <file>settings.qml</file>
+        <file>SerialMonitorWindow.qml</file>
+        <file>text_input.qml</file>
+        <file>passthrough.qml</file>
+        <file>touchpad.qml</file>
+        <file>auto_clicker.qml</file>
+    </qresource>
+</RCC>

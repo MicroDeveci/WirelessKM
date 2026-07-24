@@ -1,0 +1,40 @@
+# ESP32S3 Keyboard Bridge QML API
+
+## Pages
+
+1. `home.qml`
+2. `key_setting.qml`
+3. `device_link.qml`
+4. `text_input.qml`
+5. `log.qml`
+6. `about.qml`
+7. `thanks.qml`
+8. `settings.qml`
+9. `passthrough.qml`
+10. `auto_clicker.qml`
+11. `touchpad.qml`
+
+## Global Context
+
+`InterfaceLayer` is exposed to QML with:
+
+```cpp
+engine.rootContext()->setContextProperty("InterfaceLayer", &iface);
+```
+
+QML calls backend actions through:
+
+```qml
+InterfaceLayer.dispatch("command.name", { key: value })
+```
+
+## Connection Status
+
+`connectedTime` and `connectedTimeStr` are exposed on `InterfaceLayer` for the home page connection status.
+
+## Mouse Input
+
+`touchpad.qml` sends `mouse.move`, `mouse.button` and `mouse.releaseAll` routes.
+`passthroughMouseListening` mirrors the app-foreground mouse capture switch.
+All mouse reports pass through `MouseInputManager`, `MouseProtocol` and the
+shared `InputQueue` before reaching BLE, UART or HUDP.
