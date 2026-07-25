@@ -65,17 +65,19 @@ https://github.com/MicroDeveci/WirelessKM
 
 ### Windows (PowerShell)
 
+Set `QT_ROOT` to your local Qt installation directory. The path below is an example; select the Qt kit that matches your compiler (for example, `msvc2022_64`).
+
 Release build:
 
 ```powershell
-$env:QT_ROOT = "E:\Qt\6.11.1\msvc2022_64"
+$env:QT_ROOT = "C:\path\to\Qt\6.x.x\msvc2022_64"
 cmake --workflow --preset build-release
 ```
 
 Debug build:
 
 ```powershell
-$env:QT_ROOT = "E:\Qt\6.11.1\msvc2022_64"
+$env:QT_ROOT = "C:\path\to\Qt\6.x.x\msvc2022_64"
 cmake --workflow --preset build-debug
 ```
 
